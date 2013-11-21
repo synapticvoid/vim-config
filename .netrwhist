@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/home/robin/downloads/leptonica-1.69/config'
 let g:netrw_dirhist_2='/etc/udev/rules.d'
+let g:netrw_dirhist_3='/home/rpenea/jcdroid-legacy/build'
