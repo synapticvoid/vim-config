@@ -5,6 +5,11 @@ call pathogen#helptags()
 
 colorscheme 256-jungle
 
+" Clear filetype flags before changing runtimepath to force
+" Vim to reload them
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
 syntax on
 filetype plugin indent on
 
@@ -84,3 +89,4 @@ let b:surround_{char2nr("f")} = "{% for \1for loop: \1 %}\r{% endfor %}"
 let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
 
 nmap <F7> :% !xmllint % --format --recover 2>/dev/null<CR> 
+
