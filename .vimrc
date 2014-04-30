@@ -53,6 +53,7 @@ nmap <C-p> :bprev<CR>
 
 nmap \l :setlocal number!<CR>
 nmap \o :set paste!<CR>
+:imap jj <Esc>
 
 nmap \t :set expandtab tabstop=4 shiftwidth=4 softtabstop=4<CR>
 nmap \T :set expandtab tabstop=8 shiftwidth=8 softtabstop=4<CR>
