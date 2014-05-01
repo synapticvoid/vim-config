@@ -13,6 +13,7 @@ set runtimepath+=$GOROOT/misc/vim
 syntax on
 filetype plugin indent on
 
+let mapleader=","
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -42,7 +43,7 @@ set laststatus=2
 " plugins key mapping
 nmap <F8> :TagbarToggle<CR>
 nmap ; :CtrlPBuffer<CR>
-nmap \e :NERDTreeToggle<CR>
+nmap <Leader>e :NERDTreeToggle<CR>
 
 " key mappings
 nmap j gj
@@ -51,8 +52,9 @@ nmap k gk
 nmap <C-n> :bnext<CR>
 nmap <C-p> :bprev<CR>
 
-nmap \l :setlocal number!<CR>
-nmap \o :set paste!<CR>
+nmap <Leader>l :setlocal number!<CR>
+nmap <Leader>o :set paste!<CR>
+nmap <Leader>r :set relativenumber!<CR>
 :imap jj <Esc>
 
 nmap \t :set expandtab tabstop=4 shiftwidth=4 softtabstop=4<CR>
@@ -77,7 +79,7 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch
-nmap \q :nohlsearch<CR>
+nmap <Leader>q :nohlsearch<CR>
 
 " Django data for surround plugin
 let b:surround_{char2nr("v")} = "{{ \r }}"
