@@ -16,6 +16,6 @@ sudo apt-get install vim exuberant-ctags silversearcher-ag
 
 # clone project and link to vim
 git clone https://github.com/synapticvoid/vim-config.git $HOME/.vim
-ln -s ~/$HOME/.vim/.vimrc $HOME/.vimrc
+ln -s $HOME/.vim/.vimrc $HOME/.vimrc
 ```
 
