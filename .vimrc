@@ -28,6 +28,9 @@ fun! <SID>StripTrailingWhitespaces()
  endfun
 
 autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType python set sw=4
+autocmd FileType python set ts=4
+autocmd FileType python set sts=4
 
 " powerline stuff
 set laststatus=2
@@ -81,16 +84,6 @@ set ignorecase
 set smartcase
 set hlsearch
 nmap <Leader>q :nohlsearch<CR>
-
-" Django data for surround plugin
-let b:surround_{char2nr("v")} = "{{ \r }}"
-let b:surround_{char2nr("{")} = "{{ \r }}"
-let b:surround_{char2nr("%")} = "{% \r %}"
-let b:surround_{char2nr("b")} = "{% block \1block name: \1 %}\r{% endblock \1\1 %}"
-let b:surround_{char2nr("i")} = "{% if \1condition: \1 %}\r{% endif %}"
-let b:surround_{char2nr("w")} = "{% with \1with: \1 %}\r{% endwith %}"
-let b:surround_{char2nr("f")} = "{% for \1for loop: \1 %}\r{% endfor %}"
-let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
 
 nmap <F7> :% !xmllint % --format --recover 2>/dev/null<CR> 
 
