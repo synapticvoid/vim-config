@@ -87,3 +87,11 @@ nmap <Leader>q :nohlsearch<CR>
 
 nmap <F7> :% !xmllint % --format --recover 2>/dev/null<CR> 
 
+" -----------------------------------------------------------------------------
+" language specifics
+" -----------------------------------------------------------------------------
+
+" javascript
+let g:javascript_enable_domhtmlcss = 1
+
+
