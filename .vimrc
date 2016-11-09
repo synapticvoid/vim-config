@@ -4,7 +4,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set t_Co=256
-colorscheme molokai
+colorscheme vimbrant
 
 " Clear filetype flags before changing runtimepath to force
 " Vim to reload them
