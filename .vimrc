@@ -19,6 +19,12 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" show a visual line under the cursor's current line
+set cursorline
+
+" show the matching part of the pair for [] {} and ()
+set showmatch
+
 " auto strip trailing whitespaces
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
@@ -28,9 +34,6 @@ fun! <SID>StripTrailingWhitespaces()
  endfun
 
 autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
-autocmd FileType python set sw=4
-autocmd FileType python set ts=4
-autocmd FileType python set sts=4
 
 " powerline stuff
 set laststatus=2
@@ -94,4 +97,10 @@ nmap <F7> :% !xmllint % --format --recover 2>/dev/null<CR>
 " javascript
 let g:javascript_enable_domhtmlcss = 1
 
-
+" python
+autocmd FileType python set sw=4
+autocmd FileType python set ts=4
+autocmd FileType python set sts=4
+autocmd FileType python set autoindent
+autocmd FileType python set smartindent
+let python_highlight_all = 1
