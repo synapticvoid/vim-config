@@ -4,3 +4,6 @@
 [submodule "bundle/colorschemes"]
 	path = bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "bundle/bundle/colorschemes"]
+	path = bundle/bundle/colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
