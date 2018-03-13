@@ -104,5 +104,4 @@ autocmd FileType python set sts=4
 autocmd FileType python set autoindent
 autocmd FileType python set smartindent
 autocmd FileType python nnoremap <leader>y :0,$!yapf<Cr><C-o>
-autocmd FileType python setlocal equalprg=yapf
 let python_highlight_all = 1
