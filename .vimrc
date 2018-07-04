@@ -105,3 +105,7 @@ autocmd FileType python set autoindent
 autocmd FileType python set smartindent
 autocmd FileType python nnoremap <leader>y :0,$!yapf<Cr><C-o>
 let python_highlight_all = 1
+
+" markdown preview
+let vim_markdown_preview_github=1
+let vim_markdown_preview_hotkey='<C-m>'
