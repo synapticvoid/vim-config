@@ -109,3 +109,11 @@ let python_highlight_all = 1
 " markdown preview
 let vim_markdown_preview_github=1
 let vim_markdown_preview_hotkey='<C-m>'
+
+" surround helpers for markdown
+" code bloc
+autocmd FileType markdown let b:surround_{char2nr('-')} = "```\n\r\n```"
+" italic
+autocmd FileType markdown let b:surround_{char2nr('i')} = "*\r*"
+" bold
+autocmd FileType markdown let b:surround_{char2nr('b')} = "**\r**"
